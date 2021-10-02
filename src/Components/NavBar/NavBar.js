@@ -49,7 +49,7 @@ function Navbar() {
             </li>
 
             <li className='nav-item'>
-              <Link to='/greenareas' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/parkoptimiser' className='nav-links' onClick={closeMobileMenu}>
                 Green Areas
               </Link>
             </li>
