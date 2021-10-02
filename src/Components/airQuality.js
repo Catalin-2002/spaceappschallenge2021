@@ -3,7 +3,7 @@ import React from 'react';
 function airQuality(){
     return(
         <div className="mainBoard">
-            <p>Paragraf</p>
+            <p>Testing the merging options of the branch.</p>
         </div>
     )
 }
