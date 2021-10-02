@@ -1,5 +1,5 @@
 import React from 'react';
-import MapTransport from './Pages/PMapTransport.js' ;
+import MapTransport from './MapTransport.js' ;
 
 export default class App extends React.Component {
     constructor(props) {
