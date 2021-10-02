@@ -1,11 +1,11 @@
 import React from 'react';
 
-function airQuality(){
+function publicTransport(){
     return(
         <div className="mainBoard">
-            <h1>Air Quality</h1>
+            <h1>Public Transport</h1>
         </div>
     )
 }
 
-export default airQuality;
+export default publicTransport;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function airQuality(){
+function greenAreas(){
     return(
         <div className="mainBoard">
-            <h1>Air Quality</h1>
+            <h1>Green Areas</h1>
         </div>
     )
 }
 
-export default airQuality;
+export default greenAreas;
