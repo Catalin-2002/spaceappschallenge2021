@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - air quality
 - green/public spaces: women/children
 - public transport, road safety
+- safe and affordable housing, upgrading slums
 
 ### Required data:
 - Population levels / area 
@@ -15,14 +16,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Utilities (general knowledge)
 - Real time air quality sensor reads
 - Detect parks in certain areas
+- Public transport stations/stops in each neighbourhood
 
 ### Offer solutions:
 - Cost to upgrade(develop) area
 - Improve/develop new green spaces(parks) in an area(optimal place)
+- Suggest public transport stop locations in areas lacking them
 
 ### Targets:
 1. Find slums
-2. Limited public transport connections(to be highlighted) 
+2. Find areas with limited public transport connections(to be highlighted) 
 3. Air quality improver ( eg. by using less cars + greener energy)
 4. Find parks and see if they are enough for that specific areas
 
