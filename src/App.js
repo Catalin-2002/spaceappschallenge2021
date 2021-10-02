@@ -1,13 +1,13 @@
 import './App.css';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './Pages/home'
+import Home from './Pages/Home'
 import Navbar from './Components/NavBar/NavBar'
-import airQuality from './Pages/airQuality';
-import publicTransport from './Pages/PublicTransport/publicTransport';
-import slums from './Pages/slums';
 
-import ParkOptimiser from './Pages/ParkOptimiser/ParkOptimiser.js';
+import AirQualityPage from './Pages/AirQualityPage';
+import ParkOptimiserPage from './Pages/ParkOptimiserPage';
+import PublicTransportPage from './Pages/PublicTransportPage';
+import SlumsPage from './Pages/SlumsPage';
 
 function App() {
   return (
@@ -16,10 +16,10 @@ function App() {
   <Navbar/>
   <Switch>
     <Route path='/' exact component = {Home}/>
-    <Route path='/parkoptimiser' component = {ParkOptimiser}/>
-    <Route path='/airquality' component = {airQuality}/>
-    <Route path='/transport' component = {publicTransport}/>
-    <Route path='/slums' component = {slums}/>
+    <Route path='/parkoptimiser' component = {ParkOptimiserPage}/>
+    <Route path='/airquality' component = {AirQualityPage}/>
+    <Route path='/transport' component = {PublicTransportPage}/>
+    <Route path='/slums' component = {SlumsPage}/>
   </Switch>
   </Router>
 </>

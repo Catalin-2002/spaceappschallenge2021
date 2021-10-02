@@ -1,7 +1,7 @@
 import React from 'react';
 import MapPark from './MapPark.js' ;
 
-export default class App extends React.Component {
+export default class ParkOptimiser extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,7 +33,7 @@ export default class App extends React.Component {
       lng
     } = this.state;
     return (
-      <div className="App">
+      <div className="ParkOoptimiser">
         <MapPark
           lat={lat}
           lng={lng}
