@@ -3,10 +3,10 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Pages/Home'
 import Navbar from './Components/NavBar/NavBar'
-import airQuality from './Components/airQuality';
-import publicTransport from './Components/publicTransport';
-import greenAreas from './Components/greenAreas';
-import slums from './Components/slums';
+import airQuality from './Pages/airQuality';
+import publicTransport from './Pages/publicTransport';
+import greenAreas from './Pages/greenAreas';
+import slums from './Pages/slums';
 
 function App() {
   return (
