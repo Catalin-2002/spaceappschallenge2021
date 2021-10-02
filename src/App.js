@@ -5,8 +5,9 @@ import Home from './Pages/home'
 import Navbar from './Components/NavBar/NavBar'
 import airQuality from './Pages/airQuality';
 import publicTransport from './Pages/publicTransport';
-import greenAreas from './Pages/greenAreas';
 import slums from './Pages/slums';
+
+import ParkOptimiser from './Pages/ParkOptimiser/ParkOptimiser.js';
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
   <Navbar/>
   <Switch>
     <Route path='/' exact component = {Home}/>
+    <Route path='/parkoptimiser' component = {ParkOptimiser}/>
     <Route path='/airquality' component = {airQuality}/>
     <Route path='/transport' component = {publicTransport}/>
-    <Route path='/greenareas' component = {greenAreas}/>
     <Route path='/slums' component = {slums}/>
   </Switch>
   </Router>
