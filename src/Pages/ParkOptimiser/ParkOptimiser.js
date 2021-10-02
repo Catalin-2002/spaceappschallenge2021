@@ -11,12 +11,6 @@ export default class App extends React.Component {
     }
   }
 
-  handleInputChange = (name, value) => {
-    this.setState({
-      [name]: value
-    })
-  }
-
   handleMapViewChange = (zoom, lat, lng) => {
     this.setState({
       lat,
