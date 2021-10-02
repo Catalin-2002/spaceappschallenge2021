@@ -71,18 +71,19 @@
       }
 
     .navbar{
-        height: 300px;
+        height: 350px;
     }
 
     .NavbarItems {
       position: relative;
+      height: 10px;
     }
-  
+    
     .nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 80vh;
+      height: 70vh;
       position: absolute;
       top: 0px;
       right: 0%;
@@ -138,7 +139,7 @@
       text-align: center;
       margin: 2rem auto;
       border-radius: 4px;
-      width: 80%;
+      width: 100%;
       text-decoration: none;
       font-size: 1.5rem;
       background-color: transparent;
