@@ -3,10 +3,7 @@ import React from 'react';
 function airQuality(){
     return(
         <div className="mainBoard">
-
-            <p>
-                Testing again
-            </p>
+            <h1>Air Quality</h1>
         </div>
     )
 }
