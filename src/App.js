@@ -5,6 +5,8 @@ import airQuality from './Components/airQuality';
 import Home from './Pages/Home';
 import Navbar from './Components/NavBar/NavBar';
 
+import ParkOptimiser from './Pages/ParkOptimiser/ParkOptimiser.js';
+
 function App() {
   return (
     <>
@@ -12,6 +14,7 @@ function App() {
       <Navbar/>
       <Switch>
         <Route path='/' exact component = {Home}/>
+        <Route path='/parkoptimiser' component = {ParkOptimiser} />
         <Route path='/airquality' component = {airQuality}/>
       </Switch>
       </Router>
