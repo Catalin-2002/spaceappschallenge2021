@@ -92,6 +92,13 @@ export default class MapTransport extends React.Component {
           }
           map.setCenter(center);
         }
+
+        let zoom = map.getZoom();
+
+        if(zoom < 12) {
+          zoom = 12;
+          map.setZoom(zoom);
+        }
       });
     }
 }
