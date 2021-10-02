@@ -1,6 +1,7 @@
 import React from 'react';
 import H from "@here/maps-api-for-javascript";
 import onResize from 'simple-element-resize-detector';
+import {neighborhoods} from '../../Data/Neighborhoods.js'
 
 
 export default class MapSlums extends React.Component {
@@ -10,6 +11,22 @@ export default class MapSlums extends React.Component {
     this.ref = React.createRef();
     // reference to the map
     this.map = null;
+  }
+
+  addPolygon(map, coordinates) {
+    var lineString = new H.geo.LineString(
+      coordinates,
+      'values lat lng alt'
+    );
+    map.addObject(
+      new H.map.Polygon(lineString, {
+        style: {
+          fillColor: "rgba(250, 200, 100, 0.5)",
+          strokeColor: '#829',
+          lineWidth: 4
+        }
+      })
+    );
   }
 
   componentDidMount() {
@@ -35,6 +52,13 @@ export default class MapSlums extends React.Component {
       map.addEventListener('mapviewchange', this.handleMapViewChange);
       window.addEventListener('resize', () => this.map.getViewPort().resize());
       this.restrictMap(this.map);
+
+      for(let neighborhood in neighborhoods) {
+        var Neighborhood = neighborhoods[neighborhood]; 
+        this.addPolygon(this.map, Neighborhood);
+      }
+      
+
       // add the interactive behaviour to the map
       new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     }
