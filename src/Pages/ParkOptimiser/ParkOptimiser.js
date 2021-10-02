@@ -1,6 +1,5 @@
 import React from 'react';
-import Map from './Maps/Map.js';
-import MapPosition from './Maps/MapPosition.js';
+import MapPark from './MapPark.js' ;
 
 export default class App extends React.Component {
   constructor(props) {
@@ -35,16 +34,10 @@ export default class App extends React.Component {
     } = this.state;
     return (
       <div className="App">
-        <Map
+        <MapPark
           lat={lat}
           lng={lng}
           onMapViewChange={this.handleMapViewChange}
-          zoom={zoom}
-        />
-        <MapPosition
-          lat={lat}
-          lng={lng}
-          onChange={this.handleInputChange}
           zoom={zoom}
         />
       </div>

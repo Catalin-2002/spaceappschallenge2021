@@ -3,7 +3,7 @@ import H from "@here/maps-api-for-javascript";
 import onResize from 'simple-element-resize-detector';
 
 
-export default class Map extends React.Component {
+export default class MapPark extends React.Component {
   constructor(props) {
     super(props);
     // the reference to the container
@@ -23,8 +23,8 @@ export default class Map extends React.Component {
         layers.vector.normal.map,
         {
           pixelRatio: window.devicePixelRatio,
-          center: {lat: 0, lng: 0},
-          zoom: 2,
+          center: {lat: 45.756698, lng: 21.228805},
+          zoom: 13,
         },
       );
       onResize(this.ref.current, () => {
@@ -33,6 +33,8 @@ export default class Map extends React.Component {
       this.map = map;
       // attach the listener
       map.addEventListener('mapviewchange', this.handleMapViewChange);
+      window.addEventListener('resize', () => this.map.getViewPort().resize());
+      this.restrictMap(this.map);
       // add the interactive behaviour to the map
       new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     }
@@ -69,6 +71,30 @@ export default class Map extends React.Component {
       onMapViewChange(zoom, lat, lng);
     }
   }
+
+  restrictMap = (map) => {
+    if(map != null) {
+      const bounds = new H.geo.Rect(45.806698, 21.178805, 45.706698, 21.278805);
+
+      map.getViewModel().addEventListener('sync', function() {
+        let center = map.getCenter();
+
+        if (!bounds.containsPoint(center)) {
+          if (center.lat > bounds.getTop()) {
+            center.lat = bounds.getTop();
+          } else if (center.lat < bounds.getBottom()) {
+            center.lat = bounds.getBottom();
+          }
+          if (center.lng < bounds.getLeft()) {
+            center.lng = bounds.getLeft();
+          } else if (center.lng > bounds.getRight()) {
+            center.lng = bounds.getRight();
+          }
+          map.setCenter(center);
+        }
+      });
+    }
+}
 
 
   render() {
