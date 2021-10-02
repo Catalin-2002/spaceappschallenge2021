@@ -1,5 +1,5 @@
 import React from 'react';
-import MapPark from './MapPark.js' ;
+import MapTransport from './MapTransport.js' ;
 
 export default class App extends React.Component {
   constructor(props) {
@@ -34,7 +34,7 @@ export default class App extends React.Component {
     } = this.state;
     return (
       <div className="App">
-        <MapPark
+        <MapTransport
           lat={lat}
           lng={lng}
           onMapViewChange={this.handleMapViewChange}
