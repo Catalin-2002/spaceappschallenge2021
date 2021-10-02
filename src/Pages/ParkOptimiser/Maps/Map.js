@@ -70,7 +70,7 @@ export default class Map extends React.Component {
     }
   }
 
-  
+
   render() {
     return (
       <div
@@ -79,5 +79,5 @@ export default class Map extends React.Component {
       />
     )
   }
-  
+
 }
