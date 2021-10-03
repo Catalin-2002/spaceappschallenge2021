@@ -1,5 +1,5 @@
 import React from 'react';
-import H from "@here/maps-api-for-javascript";
+import H, { ui } from "@here/maps-api-for-javascript";
 import onResize from 'simple-element-resize-detector';
 import {neighborhoods} from '../../Data/Neighborhoods.js'
 
@@ -11,6 +11,11 @@ export default class MapSlums extends React.Component {
     this.ref = React.createRef();
     // reference to the map
     this.map = null;
+  }
+
+  addMarkersToMap(map) {
+    var steauaFratelia = new H.map.Marker({lat: 45.72129069193045, lng: 21.207864485222203});
+    map.addObject(steauaFratelia);
   }
 
   addPolygon(map, coordinates) {
@@ -57,7 +62,8 @@ export default class MapSlums extends React.Component {
         var Neighborhood = neighborhoods[neighborhood]; 
         this.addPolygon(this.map, Neighborhood);
       }
-      
+
+      this.addMarkersToMap(map);
 
       // add the interactive behaviour to the map
       new H.mapevents.Behavior(new H.mapevents.MapEvents(map));

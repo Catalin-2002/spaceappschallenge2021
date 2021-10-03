@@ -9,8 +9,8 @@
   }
   
   .modalContainer {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 625px;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -22,7 +22,7 @@
   .modalContainer .title {
     display: inline-block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 3px;
   }
   
   .titleCloseBtn {
@@ -67,4 +67,12 @@
   
   #cancelBtn {
     background-color: crimson;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    align-items: left;
   }

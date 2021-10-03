@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 
-const neighorhoodName = "Ana";
+const neighorhoodName = "Steaua Fratelia";
 const populationNumber = "190k";
 const averageSalary = "1500e";
 const topSalary = "20k";
@@ -31,16 +31,18 @@ function Modal({ setOpenModal }) {
           <h1>{neighorhoodName}</h1>
         </div>
         <div className="body">
-          <h3>Population: {populationNumber}</h3> <br/>
-          <h3>Average salary: {averageSalary}</h3> <br/>
-          <h3>Top 10% salary: {topSalary} </h3> <br/>
-          <h3>Bottom 10% salary: {bottomSalary}</h3> <br/>
-          <h3>Amount of homless people: {homlessPeople}</h3> <br/>
-          <h3>People living in underdeveloped areas: {underDeveloped}</h3> <br/>
-          <h3>Minimum price per housing; {minPrice}</h3> <br/>
 
-          <h1>Estimated price to get this neighborhood back on track: {neighorhoodNeededPrice}</h1> <br/>
-          <h1>This fix should be done by the year: {setTargetTime}</h1> <br/>
+          <ul>
+            <li>Population: {populationNumber}</li> 
+            <li>Average salary: {averageSalary}</li> 
+            <li>Top 10% salary: {topSalary} </li> 
+            <li>Bottom 10% salary: {bottomSalary}</li>
+            <li>Amount of homless people: {homlessPeople}</li>
+            <li>People living in underdeveloped areas: {underDeveloped}</li> 
+            <li>Minimum price per housing; {minPrice}</li> 
+            <li>Estimated price to get this neighborhood back on track: {neighorhoodNeededPrice}</li> 
+            <li>This fix should be done by the year: {setTargetTime}</li> 
+          </ul>
         </div>
         <div className="footer">
           <button

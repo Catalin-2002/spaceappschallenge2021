@@ -3,6 +3,7 @@ import "./SlumsPage.css"
 
 import Slums from '../Components/Slums/Slums';
 import Modal from '../Components/Slums/Modal/Modal.js'
+import Modal1 from '../Components/Slums/Modal/Modal.js'
 
 function SlumsPage(){
 
@@ -10,16 +11,15 @@ function SlumsPage(){
 
     return(
         <div className = "MainComponent">
-            <h1>Hey, click on the button to open the modal.</h1>
+
             <button
                 className="openModalBtn"
                 onClick={() => {
                     setModalOpen(true);
                 }}
                 >
-                Open
+                More info about Steaua-Fratelia
             </button>
-
             {modalOpen ? <Modal setOpenModal={setModalOpen}/> : <Slums/>}
         </div>
         
