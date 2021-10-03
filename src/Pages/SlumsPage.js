@@ -12,15 +12,58 @@ function SlumsPage(){
     return(
         <div className = "MainComponent">
 
+            
+            {modalOpen ? <Modal setOpenModal={setModalOpen}/> : <Slums/>}
+            <div className = "Buttons">
             <button
                 className="openModalBtn"
                 onClick={() => {
                     setModalOpen(true);
                 }}
                 >
-                More info about Steaua-Fratelia
+                Steaua-Fratelia
             </button>
-            {modalOpen ? <Modal setOpenModal={setModalOpen}/> : <Slums/>}
+            <button
+                className="openModalBtn"
+                onClick={() => {
+                    setModalOpen(true);
+                }}
+                >
+                Calea Martirilor
+            </button>
+            <button
+                className="openModalBtn"
+                onClick={() => {
+                    setModalOpen(true);
+                }}
+                >
+                Iosefin Dambovita
+            </button>
+            <button
+                className="openModalBtn"
+                onClick={() => {
+                    setModalOpen(true);
+                }}
+                >
+               Calea Sagului
+            </button>
+            <button
+                className="openModalBtn"
+                onClick={() => {
+                    setModalOpen(true);
+                }}
+                >
+                Elisabetin
+            </button>
+            <button
+                className="openModalBtn"
+                onClick={() => {
+                    setModalOpen(true);
+                }}
+                >
+                Complexul Studentesc
+            </button>
+            </div>
         </div>
         
     )
