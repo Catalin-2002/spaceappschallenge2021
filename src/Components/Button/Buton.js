@@ -6,7 +6,7 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-const PAGES = ['Home', 'airQuality'];
+const PAGES = ['airquality', '/'];
 
 export const Button = ({
   children,
@@ -25,14 +25,14 @@ export const Button = ({
   const checkButtonLink = links
 
   return (
-    <Link to={checkButtonLink} className='btn-mobile'>
-      <button
+    
+      <button className='btn-mobile'
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
       >
         {children}
       </button>
-    </Link>
+
   );
 };

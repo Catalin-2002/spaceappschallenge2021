@@ -59,8 +59,13 @@ function Navbar() {
                 Slums
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline' links='/'>Home</Button>}
+          
         </div>
       </nav>
     </>
