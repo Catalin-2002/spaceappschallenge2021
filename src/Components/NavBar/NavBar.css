@@ -7,12 +7,7 @@
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
-  }
-  
-  .manageitLogo {
-    height: 50px;
-    width : 50px;
+    z-index: 998;
   }
   
   .navbar-container {
@@ -22,18 +17,7 @@
     height: 80px;
     max-width: 1500px;
   }
-  
-  .navbar-logo {
-    color: #fff;
-    justify-self: start;
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-  }
-  
+ 
   .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
@@ -46,12 +30,13 @@
     list-style: none;
     text-align: center;
     width: 60vw;
-    justify-content: end;
+    justify-content: start;
     margin-right: 2rem;
   }
   
   .nav-item {
-    height: 8s0px;
+    height: 50px;
+    margin-bottom: 20px;
   }
   
   .nav-links {
@@ -69,7 +54,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: rgb(255, 0, 0);
   }
   
   .nav-links-mobile {
@@ -81,29 +66,37 @@
   }
   
   @media screen and (max-width: 960px) {
+    .navbar-container {
+        z-index: 999;
+      }
+
+    .navbar{
+        height: 350px;
+    }
+
     .NavbarItems {
       position: relative;
+      height: 10px;
     }
-  
+    
     .nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
-      width: 60vw;
+      height: 70vh;
       position: absolute;
-      top: 80px;
-      left: -100%;
+      top: 0px;
+      right: 0%;
       opacity: 1;
-      transition: all 0.4s ease;
+      transition: all 0.6s ease;
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #0051ff;
       left: 0;
       opacity: 1;
       transition: right, all 0.4s ease;
-      z-index: 1;
+      z-index: 999;
     }
   
     .nav-links {
@@ -116,7 +109,7 @@
     .nav-links:hover {
       background-color: #fff;
       color: #242424;
-      border-radius: 0;
+      border-radius: 1;
     }
   
     .navbar-logo {
@@ -146,14 +139,14 @@
       text-align: center;
       margin: 2rem auto;
       border-radius: 4px;
-      width: 80%;
+      width: 100%;
       text-decoration: none;
       font-size: 1.5rem;
       background-color: transparent;
       color: #fff;
       padding: 14px 20px;
       border: 1px solid #fff;
-      transition: all 0.3s ease-out;
+      transition: all 0.8s ease-out;
     }
   
     .nav-links-mobile:hover {

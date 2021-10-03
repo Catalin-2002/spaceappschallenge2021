@@ -424,5 +424,4 @@ export default class MapTransport extends React.Component {
       />
     )
   }
-
 }
