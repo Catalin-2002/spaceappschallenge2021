@@ -1,0 +1,11 @@
+.greetings {
+     text-align: center; 
+     font-size: 2em; 
+     padding-top: 5.5em;
+    }
+
+ul { 
+    
+    list-style: none;
+    display: inline-block; 
+}
