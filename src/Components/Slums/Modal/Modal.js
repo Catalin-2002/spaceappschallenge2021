@@ -2,16 +2,16 @@ import React from "react";
 import "./Modal.css";
 
 const neighorhoodName = "Steaua Fratelia";
-const populationNumber = "190k";
-const averageSalary = "1500e";
-const topSalary = "20k";
-const bottomSalary = "2k";
-const homlessPeople = "500";
-const underDeveloped = "300";
-const minPrice = "20000"
+const populationNumber = "20.000";
+const averageSalary = "700€";
+const topSalary = "3500€";
+const bottomSalary = "300€";
+const homlessPeople = "2%";
+const underDeveloped = "10%";
+const minPrice = "20.000€"
 
-const neighorhoodNeededPrice = "240000";
-const setTargetTime = "2030"
+const neighorhoodNeededPrice = "about 48.000.000€";
+const setTargetTime = "2040"
 
 function Modal({ setOpenModal }) {
   return (

@@ -15,7 +15,6 @@ export default class MapSlums extends React.Component {
 
   addMarkersToMap(map) {
     var steauaFratelia = new H.map.Marker({lat: 45.72129069193045, lng: 21.207864485222203});
-    steauaFratelia.addOn
     map.addObject(steauaFratelia);
   }
 
